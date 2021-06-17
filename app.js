@@ -1,10 +1,10 @@
 // Importamos las dependencias
-const express=require('express');
+const express = require('express');
 const path = require('path');
 require('dotenv').config({ path: 'variables.env'})
 
 // Creamos una app con Express
-const app=express();
+const app = express();
 
 // Habilitamos pug
 app.set('view engine', 'pug');

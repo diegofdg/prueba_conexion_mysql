@@ -17,7 +17,7 @@ exports.getCategoria = async (req,res) => {
     try {        
         await query ('SELECT * FROM categoria ORDER BY id', (error,regs,fields) => {
             if(error){
-                res.status(413).send({'mje':'Error inesperado. '+error});
+                res.status(413).send({'Mensaje':'Error inesperado. '+error});
             } else {
                 res.render('index', {
                     regs
@@ -26,6 +26,6 @@ exports.getCategoria = async (req,res) => {
         });
     }
     catch(error){
-        res.status(413).send({'mje':'Error inesperado. '+error});
+        res.status(413).send({'Mensaje':'Error inesperado. '+error});
     }
 }

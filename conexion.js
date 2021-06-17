@@ -8,5 +8,4 @@ let conn=mysql.createConnection({
     database: process.env.BD_NOMBRE,    
 });
 
-
 module.exports = conn;
